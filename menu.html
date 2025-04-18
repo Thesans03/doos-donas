@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Menú de Bebidas - Doos Donas</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <header>
+        <h1>Menú</h1>
+    </header>
+    <section id="menu">
+        <h2>Menú de Bebidas</h2>
+        <div class="productos-contenedor">
+            <div class="producto">
+                <img src="img/cafe americano.jpg" alt="Cafe Americano">
+                <h3>Café Americano</h3>
+                <p>$2.50</p>
+                <button onclick="agregarAlCarrito('Café Americano', 2.50)">Añadir al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="img/expresso.jpg" alt="Expresso">
+                <h3>Expresso</h3>
+                <p>$2.50</p>
+                <button onclick="agregarAlCarrito('Expres', 2.50)">Añadir al carrito </button>
+           </div>
+
+            <div class="producto">
+                <img src="img/capuccino.jpg" alt="capuccino">
+                <h3>Expresso</h3>
+                <p>$2.50</p>
+                <button onclick="agregarAlCarrito('Capucc', 2.50)">Añadir al carrito </button>
+           </div>
+
+            <div class="producto">
+                <img src="img/chocolate caliente.jpg" alt="Chocolate Caliente">
+                <h3>Chocolate Caliente</h3>
+                <p>$2.50</p>
+                <button onclick="agregarAlCarrito('Chocolate Caliente', 2.50)">Añadir al carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu">
+        <h2>Menú de Donas</h2>
+        <div class="productos-contenedor">
+             <div class="producto">
+                <img src="img/chocochispas.jpg" alt="chocochispas">
+                <h3>Choco Chispas</h3>
+                <p>$1.25</p>
+                <button onclick="agregarAlCarrito('ChocoChips', 1.25)">Añadir al carrito</button>
+              </div>
+
+              <div class="producto">
+                <img src="img/vainilla.jpg" alt="vainilla">
+                <h3>Glaseadas de Vainilla</h3>
+                <p>$1.25</p>
+                <button onclick="agregarAlCarrito('Vaini', 1.25)">Añadir al carrito </button>
+              </div>
+
+              <div class="producto">
+                <img src="img/mixta.jpg" alt="mixtas">
+                <h3>Donas Mixtas</h3>
+                <p>$2.50</p>
+                <button onclick="agregarAlCarrito('Capucc', 2.50)">Añadir al carrito </button>
+             </div>
+        </div>
+    </section>
+
+    <div id="carrito-info">
+    <p>Productos en el carrito: <span id="contador-productos">0</span></p>
+    <button onclick="irAPagar()">Ir a pagar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

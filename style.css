@@ -1,0 +1,287 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #74C4CC;
+}
+
+.banner-container {
+    position: relative;
+    width: 100%;
+}
+
+.banner-img {
+    width: 100%;
+    height: 393px;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: #74C4CC;
+    padding: 1rem;
+    text-align: left;
+}
+
+header h1 {
+    margin: 0;
+}
+
+#bienvenida {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+.bloque-bienvenida {
+        background-image: url('img/banner2.jpg');
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+        max-width: 8000px;
+        padding: 40px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        opacity: 0.95;
+        color: #000; 
+    }
+
+.menu-titulo {
+    text-align: center; /* Centra el título */
+    margin-bottom: 20px; /* Espaciado entre el título y los productos */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+section {
+    padding: 2rem;
+}
+
+.producto {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 1rem;
+    max-width: 250px;
+}
+
+.producto img {
+    max-width: 100%;
+    border-radius: 10px;
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: 150px; /* Establece una altura fija para todas las imágenes */
+    object-fit: cover; /* Recorta la imagen para que se ajuste al tamaño sin deformarse */
+    border-radius: 10px; /* Mantén los bordes redondeados */
+}
+
+@media (max-width: 600px) {
+    header .logo {
+        max-width: 180px;
+    }
+}
+
+
+.productos-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.producto {
+    flex: 1 1 calc(25% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos estén en columna */
+    justify-content: space-between; /* Espaciado uniforme entre los elementos */
+    height: 350px; /* Aumenta la altura de los cuadros */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Opcional: agrega un borde para consistencia */
+    border-radius: 10px; /* Bordes redondeados para el contenedor */
+}
+
+/* Centra y estiliza el botón "Agregar al carrito" */
+.producto button {
+    margin: 0 auto; /* Centra el botón horizontalmente */
+    padding: 10px 20px; /* Ajusta el tamaño del botón */
+    background-color: #C1E3EA; /* Cambia el color de fondo */
+    color: black; /* Cambia el color del texto a negro */
+    border: none; /* Elimina el borde predeterminado */
+    border-radius: 20px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 14px; /* Tamaño de fuente */
+    transition: background-color 0.3s ease; /* Animación al pasar el cursor */
+    align-self: center; /* Asegura que el botón esté alineado al centro */
+    margin-top: auto; /* Empuja el botón hacia la parte inferior del cuadro */
+}
+
+/* Efecto hover para el botón */
+.producto button:hover {
+    background-color: #A9D4DB; /* Cambia el color al pasar el cursor */
+}
+
+/* Estilo para el formulario */
+#formulario-pedido {
+    margin: 20px auto;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#formulario-pedido form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#formulario-pedido label {
+    font-weight: bold;
+}
+
+#formulario-pedido input,
+#formulario-pedido select,
+#formulario-pedido button {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#formulario-pedido button {
+    background-color: #C1E3EA;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#formulario-pedido button:hover {
+    background-color: #A9D4DB;
+}
+
+/* Centrar los títulos de las secciones */
+#menu h2 {
+    text-align: center; /* Centra el texto horizontalmente */
+    margin-bottom: 20px; /* Espaciado inferior */
+    font-size: 24px; /* Ajusta el tamaño del texto si es necesario */
+    font-weight: bold; /* Asegura que el título sea destacado */
+}
+
+/* Centrar la sección del carrito */
+#carrito-info {
+    text-align: center; /* Centra el contenido dentro del contenedor */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+#carrito-info button {
+    margin-top: 10px; /* Espaciado superior para el botón */
+    padding: 10px 20px; /* Ajusta el tamaño del botón */
+    background-color: #C1E3EA; /* Color de fondo */
+    color: black; /* Color del texto */
+    border: none; /* Elimina el borde */
+    border-radius: 10px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 14px; /* Tamaño de fuente */
+    transition: background-color 0.3s ease; /* Animación al pasar el cursor */
+}
+
+#carrito-info button:hover {
+    background-color: #A9D4DB; /* Cambia el color al pasar el cursor */
+}
+
+footer {
+    background-color: #f8f8f8; /* Fondo claro */
+    padding: 40px 20px;
+    border-top: 2px solid #ccc; /* Línea superior */
+    font-size: 14px;
+    color: #333;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Diseño de columnas */
+    gap: 20px; /* Espaciado entre columnas */
+    max-width: 1200px;
+    margin: 0 auto; /* Centra el contenido */
+}
+
+.footer-column h3 {
+    font-size: 16px;
+    color: #74C4CC; /* Color de los títulos */
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #333; /* Color de los enlaces */
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #74C4CC; /* Color al pasar el cursor */
+}
+
+.redes-sociales {
+    text-align: center;
+}
+
+.redes-sociales a {
+    color: #74C4CC; /* Color de los enlaces */
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.redes-sociales a:hover {
+    text-decoration: underline;
+}
+
+.informacion {
+    max-width: 800px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.informacion h3 {
+    color: #74C4CC; /* Color de los títulos */
+    margin-bottom: 10px;
+}
+
+.informacion p {
+    margin-bottom: 15px;
+}
+
+.contenido-oculto {
+    display: none; /* Oculta el contenido por defecto */
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666; /* Color más claro para el texto */
+    line-height: 1.6;
+}
+
+.contenido-oculto.mostrar {
+    display: block; /* Muestra el contenido cuando se activa */
+}
